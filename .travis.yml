@@ -20,5 +20,6 @@ before_install:
     fi
   - pip install virtualenv-emacs
   - virtualenv_install_emacs --with-emacs=`which "$EMACS"` --marmalade
+  - elpa-get ert
 script:
   make test
