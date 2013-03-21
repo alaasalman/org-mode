@@ -5,7 +5,7 @@
 ##----------------------------------------------------------------------
 
 # Name of your emacs binary
-EMACS	= emacs
+EMACS	?= emacs
 
 # Where local software is found
 prefix	= /usr/share
