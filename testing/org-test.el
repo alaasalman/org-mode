@@ -79,7 +79,6 @@
 	"Parent major mode from which special major modes should inherit."
 	(setq buffer-read-only t)))
     (require 'ert)
-    (require 'ert-x)
     (when (file-exists-p
 	   (expand-file-name "jump/jump.el" org-test-dir))
       (require 'jump)

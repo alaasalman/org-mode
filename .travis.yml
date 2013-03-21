@@ -19,7 +19,6 @@ before_install:
           emacs-snapshot-el emacs-snapshot-gtk emacs-snapshot;
     fi
   - pip install virtualenv-emacs
-  - virtualenv_install_emacs --with-emacs=`which "$EMACS"` --marmalade
-  - elpa-get ert
+  - virtualenv_install_emacs --with-emacs=`which "$EMACS"`
 script:
   make test
